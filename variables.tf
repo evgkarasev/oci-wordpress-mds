@@ -104,6 +104,10 @@ variable "mysql_shape" {
   default = "MySQL.VM.Standard.E3.1.8GB"
 }
 
+variable "mysql_db_system_backup_policy_is_enabled" {
+  default = true
+}        
+
 variable "mysql_is_highly_available" {
   default = false
 }
