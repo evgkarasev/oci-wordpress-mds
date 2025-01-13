@@ -104,10 +104,6 @@ variable "mysql_shape" {
   default = "MySQL.Free"
 }
 
-variable "mysql_db_system_backup_policy_is_enabled" {
-  default = false
-}        
-
 variable "mysql_is_highly_available" {
   default = false
 }
@@ -139,6 +135,18 @@ variable "mysql_db_system_hostname_label" {
 variable "mysql_db_system_maintenance_window_start_time" {
   description = "The start of the 2 hour maintenance window. This string is of the format: {day-of-week} {time-of-day}. {day-of-week} is a case-insensitive string like mon, tue, etc. {time-of-day} is the Time portion of an RFC3339-formatted timestamp. Any second or sub-second time data will be truncated to zero."
   default = "SUNDAY 23:30"
+}
+
+variable "mysql_db_system_backup_policy_is_enabled" {
+  default = true
+}        
+
+variable "mysql_db_system_backup_policy_retention_in_days" {
+  default = 7
+}
+
+variable "mysql_db_system_backup_policy_window_start_time" {
+  default = "02:30"
 }
 
 variable "wp_version" {
