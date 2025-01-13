@@ -34,6 +34,6 @@ module "mds-instance" {
     mysql_db_system_is_highly_available             = var.mysql_is_highly_available
     mysql_db_system_maintenance_window_start_time   = var.mysql_db_system_maintenance_window_start_time
     mysql_db_system_backup_policy_is_enabled        = var.mysql_db_system_backup_policy_is_enabled
-    mysql_db_system_backup_policy_retention_in_days = var.mysql_db_system_backup_policy_retention_in_days
-    mysql_db_system_backup_policy_window_start_time = var.mysql_db_system_backup_policy_window_start_time
+    # mysql_db_system_backup_policy_retention_in_days = var.mysql_db_system_backup_policy_retention_in_days
+    # mysql_db_system_backup_policy_window_start_time = var.mysql_db_system_backup_policy_window_start_time
 }

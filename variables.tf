@@ -138,16 +138,16 @@ variable "mysql_db_system_maintenance_window_start_time" {
 }
 
 variable "mysql_db_system_backup_policy_is_enabled" {
-  default = true
+  default = false
 }        
 
-variable "mysql_db_system_backup_policy_retention_in_days" {
+/* variable "mysql_db_system_backup_policy_retention_in_days" {
   default = 7
 }
 
 variable "mysql_db_system_backup_policy_window_start_time" {
   default = "02:30"
-}
+} */
 
 variable "wp_version" {
   description = "WordPress version"
