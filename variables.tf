@@ -101,7 +101,7 @@ variable "admin_username" {
 }
 
 variable "mysql_shape" {
-  default = "MySQL.Free"
+  default = "MySQL.VM.Standard.E3.1.8GB"
 }
 
 variable "mysql_is_highly_available" {

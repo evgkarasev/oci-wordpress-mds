@@ -23,7 +23,7 @@ module "oci-arch-wordpress-mds" {
   fingerprint        = var.fingerprint
   region             = var.region
   private_key_path   = var.private_key_path
-  use_existing_vcn   = false
+  #use_existing_vcn   = false
   compartment_ocid   = var.compartment_ocid
   numberOfNodes      = 1
   admin_password     = var.admin_password
