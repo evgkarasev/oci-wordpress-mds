@@ -141,12 +141,8 @@ variable "mysql_db_system_backup_policy_is_enabled" {
   default = true
 }   
 
-variable "mysql_db_system_backup_policy_pitr_policy_is_enabled" {
-  default = true
-}
-
 variable "mysql_db_system_backup_policy_retention_in_days" {
-  default = 7
+  default = 3
 }
 
 variable "mysql_db_system_backup_policy_window_start_time" {
